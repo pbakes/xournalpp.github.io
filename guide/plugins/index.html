@@ -1,0 +1,728 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.0">
+    
+    
+      
+        <title>Plugins - Xournal++</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.89dc9fe3.min.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecd4686e.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="deep-orange">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#plugins" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Xournal++" class="md-header-nav__button md-logo" aria-label="Xournal++">
+      
+  <img src="../../img/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Xournal++
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Plugins
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/xournalpp/xournalpp.github.io/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Xournal++" class="md-nav__button md-logo" aria-label="Xournal++">
+      
+  <img src="../../img/favicon.ico" alt="logo">
+
+    </a>
+    Xournal++
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/xournalpp/xournalpp.github.io/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/" title="Install" class="md-nav__link">
+      Install
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Guide
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Guide" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/" title="Tools & Editing" class="md-nav__link">
+      Tools & Editing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Plugins
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Plugins" class="md-nav__link md-nav__link--active">
+      Plugins
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#plugin-manager" class="md-nav__link">
+    Plugin manager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-folder" class="md-nav__link">
+    Installation folder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugin-structure" class="md-nav__link">
+    Plugin structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pluginini" class="md-nav__link">
+    plugin.ini
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mainlua" class="md-nav__link">
+    main.lua
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugin-api" class="md-nav__link">
+    Plugin API
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-plugins-to-define-shortcuts-for-ui-actions" class="md-nav__link">
+    Using plugins to define shortcuts for ui actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-lua-modules" class="md-nav__link">
+    Using Lua modules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notable-plugins" class="md-nav__link">
+    Notable Plugins
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tips/" title="Tips" class="md-nav__link">
+      Tips
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="https://github.com/xournalpp/xournalpp/issues" title="Report a bug" class="md-nav__link">
+      Report a bug
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#plugin-manager" class="md-nav__link">
+    Plugin manager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-folder" class="md-nav__link">
+    Installation folder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugin-structure" class="md-nav__link">
+    Plugin structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pluginini" class="md-nav__link">
+    plugin.ini
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mainlua" class="md-nav__link">
+    main.lua
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugin-api" class="md-nav__link">
+    Plugin API
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-plugins-to-define-shortcuts-for-ui-actions" class="md-nav__link">
+    Using plugins to define shortcuts for ui actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-lua-modules" class="md-nav__link">
+    Using Lua modules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notable-plugins" class="md-nav__link">
+    Notable Plugins
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/xournalpp/xournalpp.github.io/edit/site/docs/guide/plugins.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h1 id="plugins">Plugins</h1>
+<p>Xournal++ provides a basic Lua Plugin interface. Plugins can be added without building Xournal++ from source. Their primary use is to add user-specific functionality, shortcuts, make calls to external programs, define user-specific export functions and the like.</p>
+<p>In general the Lua Plugin interface is still in a very early stage and does not provide
+much functionality, but it can still be quite useful at times.</p>
+<p>In order to use Lua Plugins make sure you have <code>Lua (version &gt;=5.3)</code> installed on your device.</p>
+<h2 id="plugin-manager">Plugin manager</h2>
+<p>Plugins must be activated or deactivated in the Plugin manager (from the menubar). The Plugin manager lists the installation folder, description, author and version for each plugin. Only activated plugins will be listed in the menubar and only those can be run. The other plugins are safely excluded. Note that a restart of Xournal++ is required to change the activation of a plugin.</p>
+<h2 id="installation-folder">Installation folder</h2>
+<p>Currently all plugins reside in the same folder. By default this folder is</p>
+<ul>
+<li><code>/usr/local/share/xournalpp/plugins/</code> under Linux.</li>
+<li><code>C:\Program Files\Xournal++\plugins\</code> under Windows.</li>
+</ul>
+<p>Each plugin has its files stored in a subfolder of the plugin folder and contains at least a <code>plugin.ini</code> file and a Lua code file.</p>
+<p>Custom plugin folder(s) are planned to be added, see <a href="https://github.com/xournalpp/xournalpp/issues/1155">this issue</a>, but not yet there.</p>
+<h2 id="plugin-structure">Plugin structure</h2>
+<p>The <code>plugin.ini</code> file contains the name of the author, the version number, info on whether it is enabled by default
+or not and a reference to the main Lua code file. A sample file (referencing <code>main.lua</code>) is:</p>
+<h4 id="pluginini"><strong><code>plugin.ini</code></strong></h4>
+<div class="highlight"><pre><span></span><code><span class="k">[about]</span>
+<span class="c1">## Author / Copyright notice</span>
+<span class="na">author</span><span class="o">=</span><span class="s">NAME OF THE AUTHOR</span>
+
+<span class="na">description</span><span class="o">=</span><span class="s">DESCRIPTION OF THE PLUGIN</span>
+
+<span class="c1">## If the plugin is packed with Xournal++, use</span>
+<span class="c1">## &lt;xournalpp&gt; then it gets the same version number</span>
+<span class="na">version</span><span class="o">=</span><span class="s">&lt;xournalpp&gt;</span>
+
+<span class="k">[default]</span>
+<span class="na">enabled</span><span class="o">=</span><span class="s">false</span>
+
+<span class="k">[plugin]</span>
+<span class="na">mainfile</span><span class="o">=</span><span class="s">main.lua</span>
+</code></pre></div>
+
+<p>The Lua code file referenced in the <code>plugin.ini</code> file must define a <code>initUi</code>-function that registers toolbar actions and initializes all UI stuff. It is supposed to call the <code>app.registerUi</code>-function, whose argument is a Lua table containing</p>
+<ul>
+<li>the <code>menu</code> name displayed in Xournal++'s menubar,</li>
+<li>the <code>callback</code> function used when the plugin is called from the menu or via accelerator,</li>
+<li>the <code>accelerator</code> used to execute the plugin callback function. The format looks like <code>&lt;Control&gt;a</code> or <code>&lt;Shift&gt;&lt;Alt&gt;F1</code> or <code>&lt;Release&gt;z</code> (for key release). See <a href="https://developer.gnome.org/gtk3/stable/gtk3-Keyboard-Accelerators.html#gtk-accelerator-parse">GTK3 reference</a> for details. The accelerator can be omitted. Using accelerators without (<code>&lt;Alt&gt;</code>, <code>&lt;Control&gt;</code>, <code>&lt;Shift&gt;</code>) modifiers is allowed, but will likely break the text tool.</li>
+</ul>
+<p>You can register multiple menu entires/accelators in the same plugin by using multiple <code>app.registerUi</code>.</p>
+<p>A sample file for the main Lua code file is:</p>
+<h4 id="mainlua"><strong><code>main.lua</code></strong></h4>
+<div class="highlight"><pre><span></span><code><span class="c1">-- Register all Toolbar actions and intialize all UI stuff</span>
+<span class="kr">function</span> <span class="nf">initUi</span><span class="p">()</span>
+  <span class="n">app</span><span class="p">.</span><span class="n">registerUi</span><span class="p">({[</span><span class="s2">&quot;menu&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;NAME&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;callback&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;run&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;accelerator&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&lt;Alt&gt;F1&quot;</span><span class="p">});</span>
+<span class="c1">-- ADD MORE CODE, IF NEEDED</span>
+<span class="kr">end</span>
+
+<span class="c1">-- Callback if the menu item is executed</span>
+<span class="kr">function</span> <span class="nf">run</span><span class="p">()</span>
+<span class="c1">-- ADD CODE LIKE</span>
+<span class="c1">-- app.uiAction({[&quot;action&quot;]=&quot;ACTION_TOOL_PEN&quot;})</span>
+<span class="c1">-- TO SWITCH TO THE PEN TOOL, OR</span>
+<span class="c1">-- app.changeToolColor({[&quot;color&quot;] = 0xff0000, [&quot;selection&quot;] = true})</span>
+<span class="c1">-- TO CHANGE THE COLOR OF THE CURRENT TOOL TO RED</span>
+<span class="kr">end</span>
+</code></pre></div>
+
+<h2 id="plugin-api">Plugin API</h2>
+<p>The Lua Plugin can execute a (small) number of Xournal++ functions to interact with Xournal++. Those are defined and documented in the
+<a href="https://github.com/xournalpp/xournalpp/blob/6fa6d3c98e33ed71e31f9ef79de18b845cbd9c70/src/plugin/luapi_application.h#L311-L317">Plugin API</a>.</p>
+<p>Currently the list contains the following functions:</p>
+<ul>
+<li><code>app.msgbox</code> for displaying messages to the user and letting the user choose an option by clicking a button</li>
+<li><code>app.registerUi</code> used in the <code>initUi</code>-function</li>
+<li><code>app.uiAction</code> for simulating a toolbar/menubar click starting some action,</li>
+<li><code>app.uiActionSelected</code> for notifying action listeners about selected options,</li>
+<li><code>app.changeCurrentPageBackground</code> for changing the background of the current page,</li>
+<li><code>app.changeToolColor</code> for changing the color of any tool with color capabilities,</li>
+<li><code>app.saveAs</code> for retrieving the filename from a native saveAs dialog.</li>
+</ul>
+<p>Two more functions are currently been added to the API in a <a href="https://github.com/xournalpp/xournalpp/pull/2176">Pull Request for handwriting recognition</a>.</p>
+<ul>
+<li><code>app.getStrokes</code> gets the strokes from the selection tool or a page layer</li>
+<li><code>app.getWidthAndHeight</code> gets the width and the height from the selection tool or a page layer</li>
+</ul>
+<p>Future progress on the Plugin API will be reported here. Help is always welcome.</p>
+<h3 id="using-plugins-to-define-shortcuts-for-ui-actions">Using plugins to define shortcuts for ui actions</h3>
+<p>Currently Xournal++ does not have shortcuts/keybindings configurable in the preferences. However you can write your custom plugin to achieve exactly that.</p>
+<p>The function <code>app.uiAction</code> used for simulating a toolbar/menubar click can be used for lots of different actions.
+This command accepts a Lua table with keys
+<code>"action"</code>, <code>"group"</code> and <code>"enabled"</code>
+as its argument. The <code>"group"</code> key is only used for displaying warnings, so you can omit it. The <code>"enabled"</code> key is set to <code>true</code> by default, so you can often omit it as well. The <code>"action"</code> key accepts
+one of the action strings listed in the <a href="https://github.com/xournalpp/xournalpp/blob/6fa6d3c98e33ed71e31f9ef79de18b845cbd9c70/src/control/Control.cpp#L371-L968"><code>Control::actionPerformed</code> method</a> in the source code. Note that the list of actions will change when new functionality is added to Xournal++.</p>
+<p>For example use:</p>
+<div class="highlight"><pre><span></span><code><span class="n">app</span><span class="p">.</span><span class="n">uiAction</span><span class="p">({[</span><span class="s2">&quot;action&quot;</span><span class="p">]</span><span class="o">=</span><span class="s2">&quot;ACTION_RULER&quot;</span><span class="p">})</span>
+</code></pre></div>
+
+<p>to activate the ruler (for drawing line segments) or</p>
+<div class="highlight"><pre><span></span><code><span class="n">app</span><span class="p">.</span><span class="n">uiAction</span><span class="p">({[</span><span class="s2">&quot;action&quot;</span><span class="p">]</span><span class="o">=</span><span class="s2">&quot;ACTION_TOOL_FILL&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;enabled&quot;</span><span class="p">]</span><span class="o">=</span><span class="kc">false</span><span class="p">})</span>
+</code></pre></div>
+
+<p>to turn of filling of shapes.</p>
+<h2 id="using-lua-modules">Using Lua modules</h2>
+<p>More complex Plugins will require Lua modules for certain operations. For instance if your Plugin needs a more sophisticated GUI, you may want to use the <code>lgi</code>-module via <code>require("lgi")</code>.</p>
+<p>For security reasons the Lua package path currently only contains the folder of the plugin. So you must add the path where the Lua modules you use are installed. This can be done by executing:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">package.path</span> <span class="o">=</span> <span class="nb">package.path</span> <span class="o">..</span> <span class="s2">&quot;YOUR PATH(S)&quot;</span>
+</code></pre></div>
+
+<p>in the <code>initUI</code>-function.</p>
+<h2 id="notable-plugins">Notable Plugins</h2>
+<ul>
+<li>The <code>QuickSnapshot</code> Plugin uses an external screenshot tool, to quickly take a screen snapshot of a region of the screen and save it into a user specified file</li>
+<li>The <code>ToggleGrid</code> Plugin provides a shortcut for toggling between "grid background with snapping to grid" and "plain background without snapping to grid"</li>
+<li>the <code>ColorCycle</code>Plugin lets you cycle through a list of colors for the current tool by using the same accelerator repeatedly</li>
+<li>The <code>HandwritingRecognition</code> Plugin (work in progress) uses the google cloud-based IME handwriting API to recognize handwritten text from a selection or page layer in a user-specified language.</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../tools/" title="Tools & Editing" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Tools & Editing
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../tips/" title="Tips" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Tips
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" /></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.36cbf620.min.js"></script>
+      <script src="../../assets/javascripts/bundle.00c583dd.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.7f7c8775.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
